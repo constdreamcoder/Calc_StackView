@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomKeyBoard" customModule="Basic_1_Lecture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="347"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="NVu-Mr-l01">
+                    <rect key="frame" x="0.0" y="44" width="500" height="269"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="beD-sq-30r">
+                            <rect key="frame" x="0.0" y="0.0" width="500" height="66"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Med-5v-qoH">
+                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="66"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="7">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="lPk-cd-Hse"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8d-Ws-9md">
+                                    <rect key="frame" x="125.5" y="0.0" width="123.5" height="66"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-2L-XPW">
+                                    <rect key="frame" x="251" y="0.0" width="123.5" height="66"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="8">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="JQP-mT-dHD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yss-cy-r4V">
+                                    <rect key="frame" x="376.5" y="0.0" width="123.5" height="66"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="9">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="75v-n5-dOS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="oOK-0l-AFn">
+                            <rect key="frame" x="0.0" y="68" width="500" height="65.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyd-mg-H75">
+                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="65.5"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="4">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="aOD-DO-pa2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5b-fS-JK8">
+                                    <rect key="frame" x="125.5" y="0.0" width="123.5" height="65.5"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="5">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Di1-yf-bCU"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSu-lk-Qf1">
+                                    <rect key="frame" x="251" y="0.0" width="123.5" height="65.5"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCt-4e-HV9">
+                                    <rect key="frame" x="376.5" y="0.0" width="123.5" height="65.5"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="6">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nzr-B8-6vB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-Ts-1LX">
+                            <rect key="frame" x="0.0" y="135.5" width="500" height="66"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-a7-uwv">
+                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="66"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="1">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="QLO-SW-URS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dS-UE-JTg">
+                                    <rect key="frame" x="125.5" y="0.0" width="123.5" height="66"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="2">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="DHm-dX-nxp"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-b4-jNi">
+                                    <rect key="frame" x="251" y="0.0" width="123.5" height="66"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="3">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="F8W-CL-u4l"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qg1-sc-mr4">
+                                    <rect key="frame" x="376.5" y="0.0" width="123.5" height="66"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ler-xt-bZY">
+                            <rect key="frame" x="0.0" y="203.5" width="500" height="65.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3m-iT-x4C">
+                                    <rect key="frame" x="0.0" y="0.0" width="165.5" height="65.5"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="00">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="JR2-W0-5R4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-LR-z6I">
+                                    <rect key="frame" x="167.5" y="0.0" width="165" height="65.5"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Sg-sw-wFC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOP-O8-jZH">
+                                    <rect key="frame" x="334.5" y="0.0" width="165.5" height="65.5"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <backgroundConfiguration key="background">
+                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        </backgroundConfiguration>
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="000">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="cCB-2N-8QG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NVu-Mr-l01" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="01q-SS-3Yl"/>
+                <constraint firstItem="NVu-Mr-l01" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="I6e-t7-NWy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NVu-Mr-l01" secondAttribute="bottom" id="ZIp-ap-NJR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NVu-Mr-l01" secondAttribute="trailing" id="hyP-dh-ZBf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="146.37681159420291" y="247.43303571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
