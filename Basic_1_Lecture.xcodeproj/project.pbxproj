@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		536AA1C4292E5F7300F66670 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 536AA1C3292E5F7300F66670 /* girl.png */; };
 		537D8B3E292896C100C05FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B3D292896C100C05FE1 /* AppDelegate.swift */; };
 		537D8B40292896C100C05FE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B3F292896C100C05FE1 /* SceneDelegate.swift */; };
 		537D8B42292896C100C05FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B41292896C100C05FE1 /* ViewController.swift */; };
 		537D8B45292896C100C05FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537D8B43292896C100C05FE1 /* Main.storyboard */; };
 		537D8B47292896C800C05FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537D8B46292896C800C05FE1 /* Assets.xcassets */; };
 		537D8B4A292896C800C05FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537D8B48292896C800C05FE1 /* LaunchScreen.storyboard */; };
-		53ACE379292A5B43001DFA33 /* Cert_BG.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 53ACE378292A5B43001DFA33 /* Cert_BG.PNG */; };
-		53ACE37B292A5B54001DFA33 /* Cert_Sample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 53ACE37A292A5B54001DFA33 /* Cert_Sample.PNG */; };
+		53AA8EE1292FBFBF00FC6DC0 /* add_icon_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AA8EE0292FBFBF00FC6DC0 /* add_icon_green.png */; };
+		53AA8EE6292FBFD100FC6DC0 /* food2.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AA8EE2292FBFD100FC6DC0 /* food2.png */; };
+		53AA8EE7292FBFD100FC6DC0 /* food3.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AA8EE3292FBFD100FC6DC0 /* food3.png */; };
+		53AA8EE8292FBFD100FC6DC0 /* food1.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AA8EE4292FBFD100FC6DC0 /* food1.png */; };
+		53AA8EED292FC3CD00FC6DC0 /* WeatherBG_Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AA8EEC292FC3CD00FC6DC0 /* WeatherBG_Moon.png */; };
+		53AA8EEF292FC8AA00FC6DC0 /* FloatingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA8EEE292FC8AA00FC6DC0 /* FloatingButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		536AA1C3292E5F7300F66670 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
 		537D8B3A292896C100C05FE1 /* Basic_1_Lecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basic_1_Lecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537D8B3D292896C100C05FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		537D8B3F292896C100C05FE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +30,12 @@
 		537D8B46292896C800C05FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537D8B49292896C800C05FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		537D8B4B292896C800C05FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53ACE378292A5B43001DFA33 /* Cert_BG.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cert_BG.PNG; sourceTree = "<group>"; };
-		53ACE37A292A5B54001DFA33 /* Cert_Sample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cert_Sample.PNG; sourceTree = "<group>"; };
+		53AA8EE0292FBFBF00FC6DC0 /* add_icon_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_icon_green.png; sourceTree = "<group>"; };
+		53AA8EE2292FBFD100FC6DC0 /* food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food2.png; sourceTree = "<group>"; };
+		53AA8EE3292FBFD100FC6DC0 /* food3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food3.png; sourceTree = "<group>"; };
+		53AA8EE4292FBFD100FC6DC0 /* food1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food1.png; sourceTree = "<group>"; };
+		53AA8EEC292FC3CD00FC6DC0 /* WeatherBG_Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WeatherBG_Moon.png; sourceTree = "<group>"; };
+		53AA8EEE292FC8AA00FC6DC0 /* FloatingButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +75,12 @@
 				537D8B46292896C800C05FE1 /* Assets.xcassets */,
 				537D8B48292896C800C05FE1 /* LaunchScreen.storyboard */,
 				537D8B4B292896C800C05FE1 /* Info.plist */,
-				53ACE378292A5B43001DFA33 /* Cert_BG.PNG */,
-				53ACE37A292A5B54001DFA33 /* Cert_Sample.PNG */,
-				536AA1C3292E5F7300F66670 /* girl.png */,
+				53AA8EE0292FBFBF00FC6DC0 /* add_icon_green.png */,
+				53AA8EE4292FBFD100FC6DC0 /* food1.png */,
+				53AA8EE2292FBFD100FC6DC0 /* food2.png */,
+				53AA8EE3292FBFD100FC6DC0 /* food3.png */,
+				53AA8EEC292FC3CD00FC6DC0 /* WeatherBG_Moon.png */,
+				53AA8EEE292FC8AA00FC6DC0 /* FloatingButtonViewController.swift */,
 			);
 			path = Basic_1_Lecture;
 			sourceTree = "<group>";
@@ -134,12 +143,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53ACE37B292A5B54001DFA33 /* Cert_Sample.PNG in Resources */,
-				53ACE379292A5B43001DFA33 /* Cert_BG.PNG in Resources */,
 				537D8B4A292896C800C05FE1 /* LaunchScreen.storyboard in Resources */,
+				53AA8EE8292FBFD100FC6DC0 /* food1.png in Resources */,
+				53AA8EE6292FBFD100FC6DC0 /* food2.png in Resources */,
 				537D8B47292896C800C05FE1 /* Assets.xcassets in Resources */,
+				53AA8EE7292FBFD100FC6DC0 /* food3.png in Resources */,
+				53AA8EE1292FBFBF00FC6DC0 /* add_icon_green.png in Resources */,
+				53AA8EED292FC3CD00FC6DC0 /* WeatherBG_Moon.png in Resources */,
 				537D8B45292896C100C05FE1 /* Main.storyboard in Resources */,
-				536AA1C4292E5F7300F66670 /* girl.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AA8EEF292FC8AA00FC6DC0 /* FloatingButtonViewController.swift in Sources */,
 				537D8B42292896C100C05FE1 /* ViewController.swift in Sources */,
 				537D8B3E292896C100C05FE1 /* AppDelegate.swift in Sources */,
 				537D8B40292896C100C05FE1 /* SceneDelegate.swift in Sources */,
