@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5345920C2933A1B800CBCB90 /* DiagonalCustomImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5345920B2933A1B800CBCB90 /* DiagonalCustomImageVIew.swift */; };
-		5345920E2933A60A00CBCB90 /* night_sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 5345920D2933A60A00CBCB90 /* night_sky.png */; };
 		537D8B3E292896C100C05FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B3D292896C100C05FE1 /* AppDelegate.swift */; };
 		537D8B40292896C100C05FE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B3F292896C100C05FE1 /* SceneDelegate.swift */; };
 		537D8B42292896C100C05FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B41292896C100C05FE1 /* ViewController.swift */; };
@@ -18,8 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5345920B2933A1B800CBCB90 /* DiagonalCustomImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalCustomImageVIew.swift; sourceTree = "<group>"; };
-		5345920D2933A60A00CBCB90 /* night_sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = night_sky.png; sourceTree = "<group>"; };
 		537D8B3A292896C100C05FE1 /* Basic_1_Lecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basic_1_Lecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537D8B3D292896C100C05FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		537D8B3F292896C100C05FE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +56,6 @@
 		537D8B3C292896C100C05FE1 /* Basic_1_Lecture */ = {
 			isa = PBXGroup;
 			children = (
-				5345920B2933A1B800CBCB90 /* DiagonalCustomImageVIew.swift */,
 				537D8B3D292896C100C05FE1 /* AppDelegate.swift */,
 				537D8B3F292896C100C05FE1 /* SceneDelegate.swift */,
 				537D8B41292896C100C05FE1 /* ViewController.swift */,
@@ -68,7 +63,6 @@
 				537D8B46292896C800C05FE1 /* Assets.xcassets */,
 				537D8B48292896C800C05FE1 /* LaunchScreen.storyboard */,
 				537D8B4B292896C800C05FE1 /* Info.plist */,
-				5345920D2933A60A00CBCB90 /* night_sky.png */,
 			);
 			path = Basic_1_Lecture;
 			sourceTree = "<group>";
@@ -131,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5345920E2933A60A00CBCB90 /* night_sky.png in Resources */,
 				537D8B4A292896C800C05FE1 /* LaunchScreen.storyboard in Resources */,
 				537D8B47292896C800C05FE1 /* Assets.xcassets in Resources */,
 				537D8B45292896C100C05FE1 /* Main.storyboard in Resources */,
@@ -145,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5345920C2933A1B800CBCB90 /* DiagonalCustomImageVIew.swift in Sources */,
 				537D8B42292896C100C05FE1 /* ViewController.swift in Sources */,
 				537D8B3E292896C100C05FE1 /* AppDelegate.swift in Sources */,
 				537D8B40292896C100C05FE1 /* SceneDelegate.swift in Sources */,

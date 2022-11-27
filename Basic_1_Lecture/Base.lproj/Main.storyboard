@@ -16,34 +16,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night_sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="SV5-Se-nAw" customClass="DiagonalCustomImageVIew" customModule="Basic_1_Lecture" customModuleProvider="target">
-                                <rect key="frame" x="102" y="143" width="279" height="260"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="innerHeight">
-                                        <real key="value" value="100"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cah-KG-1ui">
+                                <rect key="frame" x="114" y="438" width="200" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bee-06-bl6">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bcJ-Uq-55N"/>
+                                            <constraint firstAttribute="width" constant="50" id="yWD-Aw-Zlc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ai6-UJ-5yF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0uQ-cI-7Lm"/>
+                                    <constraint firstAttribute="width" constant="200" id="1Pq-Hr-y6H"/>
+                                    <constraint firstItem="bee-06-bl6" firstAttribute="centerY" secondItem="cah-KG-1ui" secondAttribute="centerY" id="Qm9-X2-VMh"/>
+                                    <constraint firstItem="bee-06-bl6" firstAttribute="centerX" secondItem="cah-KG-1ui" secondAttribute="centerX" constant="-75" id="UPu-qf-Gvy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cah-KG-1ui" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LpK-oC-3nB"/>
+                            <constraint firstItem="cah-KG-1ui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VKq-uF-Ots"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonCenterX" destination="UPu-qf-Gvy" id="Cd7-ws-Igs"/>
+                        <outlet property="switchBG" destination="cah-KG-1ui" id="bYe-yr-U1E"/>
+                        <outlet property="switchBtn" destination="bee-06-bl6" id="TT2-rP-Dvq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.037383177570092" y="53.131749460043203"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="SV5-Se-nAw">
-            <size key="intrinsicContentSize" width="1242" height="2208"/>
-        </designable>
-    </designables>
     <resources>
-        <image name="night_sky.png" width="1242" height="2208"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
