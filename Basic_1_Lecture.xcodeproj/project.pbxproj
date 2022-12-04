@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		537266E3293C867400227423 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537266E1293C867400227423 /* MyCell.swift */; };
-		537266E4293C867400227423 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537266E2293C867400227423 /* MyCell.xib */; };
-		537266E6293C86D700227423 /* myBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 537266E5293C86D700227423 /* myBubble@2x.png */; };
-		537266E9293CB56800227423 /* YourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537266E7293CB56800227423 /* YourCell.swift */; };
-		537266EA293CB56800227423 /* YourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537266E8293CB56800227423 /* YourCell.xib */; };
-		537266EC293CB59400227423 /* yourBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 537266EB293CB59400227423 /* yourBubble@2x.png */; };
 		537D8B3E292896C100C05FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B3D292896C100C05FE1 /* AppDelegate.swift */; };
 		537D8B40292896C100C05FE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B3F292896C100C05FE1 /* SceneDelegate.swift */; };
 		537D8B42292896C100C05FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537D8B41292896C100C05FE1 /* ViewController.swift */; };
@@ -22,12 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		537266E1293C867400227423 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
-		537266E2293C867400227423 /* MyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
-		537266E5293C86D700227423 /* myBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myBubble@2x.png"; sourceTree = "<group>"; };
-		537266E7293CB56800227423 /* YourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCell.swift; sourceTree = "<group>"; };
-		537266E8293CB56800227423 /* YourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCell.xib; sourceTree = "<group>"; };
-		537266EB293CB59400227423 /* yourBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yourBubble@2x.png"; sourceTree = "<group>"; };
 		537D8B3A292896C100C05FE1 /* Basic_1_Lecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basic_1_Lecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537D8B3D292896C100C05FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		537D8B3F292896C100C05FE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,12 +63,6 @@
 				537D8B46292896C800C05FE1 /* Assets.xcassets */,
 				537D8B48292896C800C05FE1 /* LaunchScreen.storyboard */,
 				537D8B4B292896C800C05FE1 /* Info.plist */,
-				537266E1293C867400227423 /* MyCell.swift */,
-				537266E2293C867400227423 /* MyCell.xib */,
-				537266E7293CB56800227423 /* YourCell.swift */,
-				537266E8293CB56800227423 /* YourCell.xib */,
-				537266E5293C86D700227423 /* myBubble@2x.png */,
-				537266EB293CB59400227423 /* yourBubble@2x.png */,
 			);
 			path = Basic_1_Lecture;
 			sourceTree = "<group>";
@@ -144,11 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				537D8B4A292896C800C05FE1 /* LaunchScreen.storyboard in Resources */,
-				537266E4293C867400227423 /* MyCell.xib in Resources */,
 				537D8B47292896C800C05FE1 /* Assets.xcassets in Resources */,
-				537266EC293CB59400227423 /* yourBubble@2x.png in Resources */,
-				537266E6293C86D700227423 /* myBubble@2x.png in Resources */,
-				537266EA293CB56800227423 /* YourCell.xib in Resources */,
 				537D8B45292896C100C05FE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,9 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537266E9293CB56800227423 /* YourCell.swift in Sources */,
 				537D8B42292896C100C05FE1 /* ViewController.swift in Sources */,
-				537266E3293C867400227423 /* MyCell.swift in Sources */,
 				537D8B3E292896C100C05FE1 /* AppDelegate.swift in Sources */,
 				537D8B40292896C100C05FE1 /* SceneDelegate.swift in Sources */,
 			);
