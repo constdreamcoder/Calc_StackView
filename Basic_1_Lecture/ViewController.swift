@@ -9,34 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var switchBtn: UIButton!
-    
-    @IBOutlet weak var switchBG: UIView!
-    
-    @IBOutlet weak var buttonCenterX: NSLayoutConstraint!
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        switchBtn.layer.cornerRadius = 50 / 2
-        // 이 부분이 있어야 버튼에 곡률을 줄 수 있다.
-        switchBtn.clipsToBounds = true
-        switchBG.layer.cornerRadius = 50 / 2
+     
         
     }
-    @IBAction func selectedButton(_ sender: UIButton) {
-        if buttonCenterX.constant == 75 {
-            buttonCenterX.constant = -75
-            switchBG.backgroundColor = .lightGray
-        } else {
-            buttonCenterX.constant = 75
-            switchBG.backgroundColor = .yellow
-        }
+    @IBAction func showPopup(_ sender: UIButton) {
+        // PopupViewController
         
-        UIView.animate(withDuration: 0.3) {
-            self.view.layoutIfNeeded()
-        }
+        let storyBoard = UIStoryboard(name: "PopupViewController", bundle: nil)
+        
+        let popupVC = storyBoard.instantiateViewController(withIdentifier: "PopupViewController") as! PopupViewController
+        popupVC.modalPresentationStyle = .overCurrentContext
+        self.present(popupVC, animated: false, completion: nil)
     }
+    
 }
 
 

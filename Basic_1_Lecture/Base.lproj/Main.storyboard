@@ -16,47 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cah-KG-1ui">
-                                <rect key="frame" x="114" y="438" width="200" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bee-06-bl6">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="bcJ-Uq-55N"/>
-                                            <constraint firstAttribute="width" constant="50" id="yWD-Aw-Zlc"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                            </backgroundConfiguration>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="selectedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ai6-UJ-5yF"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0uQ-cI-7Lm"/>
-                                    <constraint firstAttribute="width" constant="200" id="1Pq-Hr-y6H"/>
-                                    <constraint firstItem="bee-06-bl6" firstAttribute="centerY" secondItem="cah-KG-1ui" secondAttribute="centerY" id="Qm9-X2-VMh"/>
-                                    <constraint firstItem="bee-06-bl6" firstAttribute="centerX" secondItem="cah-KG-1ui" secondAttribute="centerX" constant="-75" id="UPu-qf-Gvy"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-jW-idl">
+                                <rect key="frame" x="0.0" y="44" width="121" height="51.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="가즈아~">
+                                            <attributes>
+                                                <font key="NSFont" size="31" name="AppleSDGothicNeo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showPopup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HT9-5V-mzN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="cah-KG-1ui" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LpK-oC-3nB"/>
-                            <constraint firstItem="cah-KG-1ui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VKq-uF-Ots"/>
+                            <constraint firstItem="uYO-jW-idl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3JB-bH-bTl"/>
+                            <constraint firstItem="uYO-jW-idl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Hpg-uu-Z3F"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="buttonCenterX" destination="UPu-qf-Gvy" id="Cd7-ws-Igs"/>
-                        <outlet property="switchBG" destination="cah-KG-1ui" id="bYe-yr-U1E"/>
-                        <outlet property="switchBtn" destination="bee-06-bl6" id="TT2-rP-Dvq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,14 +48,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
