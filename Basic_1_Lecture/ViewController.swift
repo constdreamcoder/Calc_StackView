@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         
         emailErrorHeight = emailError.heightAnchor.constraint(equalToConstant: 0)
         passwordErrorHeight = passwordError.heightAnchor.constraint(equalToConstant: 0)
+
     }
     
     @objc func textFieldEditied(textField: UITextField) {
@@ -74,8 +75,6 @@ class ViewController: UIViewController {
         
         return true
     }
-    
-    
 }
 
 
