@@ -7,73 +7,117 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
+    @IBOutlet weak var chatTableView: UITableView! {
+        didSet {
+            chatTableView.delegate = self
+            chatTableView.dataSource = self
+            chatTableView.separatorStyle = .none
+        }
+    }
     
-  
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    var chatDatas = [String]()
     
-    @IBOutlet weak var emailError: UILabel!
-    @IBOutlet weak var passwordError: UILabel!
+    @IBOutlet weak var inputTextView: UITextView! {
+        didSet {
+            inputTextView.delegate = self
+        }
+    }
+    @IBOutlet weak var inputTextViewHeight: NSLayoutConstraint!
     
-    var emailErrorHeight: NSLayoutConstraint!
-    var passwordErrorHeight: NSLayoutConstraint!
+    @IBOutlet weak var inputVIewBottomMargin: NSLayoutConstraint!
+    
+    var window: UIWindow!
+    var bottom: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // textField 값이 변경되는 걸 캐치하는게 없음.
-        // addTarget 매서드는 해당 ui객체를 인수로 넘겨주는 특징이 있다.
-        emailTextField.addTarget(self, action: #selector(textFieldEditied), for: .editingChanged)
-        passwordTextField.addTarget(self, action: #selector(textFieldEditied), for: .editingChanged)
+        // 사용하려는 셀을 등록행 사용할 수 있다.
+        chatTableView.register(UINib(nibName: "MyCell", bundle: nil), forCellReuseIdentifier: "MyCell")
+        chatTableView.register(UINib(nibName: "YourCell", bundle: nil), forCellReuseIdentifier: "YourCell")
         
-        emailErrorHeight = emailError.heightAnchor.constraint(equalToConstant: 0)
-        passwordErrorHeight = passwordError.heightAnchor.constraint(equalToConstant: 0)
-
+        // 키보드 관련 옵저버 설정을 해야 함.
+        // 키보드 올라올 때
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        // 키보드 내려올 때
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
-    @objc func textFieldEditied(textField: UITextField) {
-        if textField == emailTextField {
-            print("이메일 텍스트 필드 \(textField.text!)")
-            if isValidEmail(testStr: textField.text) == true {
-                // 에러표시가 안 나와야 함.
-                emailErrorHeight.isActive = true
-            } else {
-                emailErrorHeight.isActive = false
-            }
-        } else if textField == passwordTextField {
-            print("비밀번호 텍스트 필드 \(textField.text!)")
-            if isValidPassword(pw: textField.text) == true {
-                passwordErrorHeight.isActive = true
-            } else {
-                passwordErrorHeight.isActive = false
-            }
-        }
+    @objc func keyboardWillShow(noti: Notification) {
+        let notiInfo = noti.userInfo!
+        let keyboardFrame = notiInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+        let height = keyboardFrame.size.height - self.view.safeAreaInsets.bottom
         
-        UIView.animate(withDuration: 0.1) {
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
+        
+        UIView.animate(withDuration: animationDuration) {
+            self.inputVIewBottomMargin.constant = height
             self.view.layoutIfNeeded()
         }
     }
     
-    // 정규식 - regular expression
-    func isValidEmail(testStr:String?) -> Bool {
-      
-        guard testStr != nil else { return false }
-        
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: testStr)
+    @objc func keyboardWillHide(noti: Notification) {
+        let notiInfo = noti.userInfo!
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
+
+        UIView.animate(withDuration: animationDuration) {
+            self.inputVIewBottomMargin.constant = 0
+            self.view.layoutIfNeeded()
+        }
     }
     
-    func isValidPassword(pw: String?) -> Bool {
-        if let hasPassword = pw {
-            if hasPassword.count < 8 {
-                return false
-            }
-        }
+    @IBAction func sendString(_ sender: UIButton) {
+        chatDatas.append(inputTextView.text)
+        inputTextView.text = ""
         
-        return true
+        // 잘 사용 안함
+        // 이유: 전체 테이블 뷰를 갱신하면 전체 레이아웃이 갱신되면서 탁탁 튀는 경향이 있어 UX적으로 보기 안좋기 때문임
+//        chatTableView.reloadData()
+        let lastIndexPath = IndexPath(row: chatDatas.count-1, section: 0)
+        chatTableView.insertRows(at: [lastIndexPath], with: .automatic)
+        
+        // 3개 데이터가 있는 array일 경우
+        // array.count = 3
+        // array row => 2
+        
+        inputTextViewHeight.constant = 40
+        
+        chatTableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
+    }
+    
+    // MARK: - UITableViewDataSource, UITableViewDelegate
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chatDatas.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row % 2 == 0 {
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as! MyCell
+            myCell.myTestView.text = chatDatas[indexPath.row]
+            myCell.selectionStyle = .none
+            return myCell
+        } else {
+            let yourCell = tableView.dequeueReusableCell(withIdentifier: "YourCell", for: indexPath) as! YourCell
+            yourCell.selectionStyle = .none
+            yourCell.yourTextView.text = chatDatas[indexPath.row]
+            return yourCell
+        }
+    }
+    
+    // MARK: - UITextViewDelegate
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if textView.contentSize.height <= 40 {
+            inputTextViewHeight.constant = 40
+        } else if textView.contentSize.height >= 100{
+            inputTextViewHeight.constant = 100
+        } else {
+            inputTextViewHeight.constant = textView.contentSize.height
+        }
     }
 }
 
